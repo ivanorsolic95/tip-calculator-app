@@ -1,0 +1,14 @@
+:root {
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --white: hsl(0, 0%, 100%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --strong-cyan: hsl(172, 67%, 45%);
+    --teal: hsl(183, 79%, 24%);
+
+    /* Hover */
+    --aqua: hsl(173, 61%, 77%);
+    --burnt-sienna: hsl(13, 70%, 60%);
+}
