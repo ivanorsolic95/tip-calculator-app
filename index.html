@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./script.js"></script>
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -15,47 +17,50 @@
     
     <img src="./images/logo.svg" alt="">
   
-    <div>
-      <form>
+    <form class="app-content-container" id="form">
 
-        <div>
+      <div class="large-screen-container">
+
+        <div class="bill-input-container">
           <label for="bill">Bill</label>
-          <input type="text" id="bill">
+          <input type="text" id="bill" placeholder="0">
         </div>
 
-        <div>
-          <span>Select tip %</span>
-          <div>
-            <div>5%</div>
-            <div>10%</div>
-            <div>15%</div>
-            <div>25%</div>
-            <div>50%</div>
-            <input placeholder="Custom" type="text">
+        <div class="tip-container">
+          <span>Select Tip %</span>
+          <div class="select-tip-container">
+            <div class="tip-percentage" data-value="5" id="five-percent-tip">5%</div>
+            <div class="tip-percentage" data-value="10" id="ten-percent-tip">10%</div>
+            <div class="tip-percentage" data-value="15" id="fifteen-percent-tip">15%</div>
+            <div class="tip-percentage" data-value="25" id="twentyfive-percent-tip">25%</div>
+            <div class="tip-percentage" data-value="50" id="fifty-percent-tip">50%</div>
+            <input class="custom-tip-percentage" id="custom-percent-tip" placeholder="Custom" type="text">
           </div>
         </div>
 
-        <div>
+        <div class="people-count-container">
+          <span id="error-message">Can't be zero</span>
           <label for="people-count">Number of People</label>
-          <input type="text" id="people-count">
+          <input type="text" id="people-count" placeholder="0">
         </div>
 
-        <div>
-          <div>
-            <div>
-              <span>Tip Amount / person</span>
-              <span>$4.27</span>
-            </div>
-            <div>
-              <span>Total / person</span>
-              <span>$32.79</span>
-            </div>
+      </div>
+
+      <div class="final-calculation-container">
+        <div class="calculation-container">
+          <div class="pro-person-tip">
+            <span class="amount">Tip Amount <span class="line-break">/ person</span></span>
+            <span class="tip-cost" id="tip-cost">$0.00</span>
           </div>
-          <button>RESET</button>
+          <div class="pro-person-total">
+            <span class="amount">Total <span class="line-break">/ person</span></span>
+            <span class="total-cost" id="total-cost">$0.00</span>
+          </div>
         </div>
+        <button class="reset-button" id="reset-button">RESET</button>
+      </div>
 
-      </form>
-    </div>
+    </form>
 
   </main>
 
