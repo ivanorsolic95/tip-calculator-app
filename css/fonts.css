@@ -1,0 +1,16 @@
+:root {
+    /* Font family */
+    --space-mono: 'Space Mono', sans-serif;
+    
+    /* Font weight */
+    --bold: 700;
+
+    /* Line height */
+    --body-medium: 1.188rem;
+    --body-large: 1.5rem;
+    --headline-medium: 2.25rem;
+    --headline-small: 2rem;
+    --display-small: 2.938rem;
+    --title-large: 1.875rem;
+    --extra-large: 4.438rem;
+}
